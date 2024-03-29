@@ -32,9 +32,11 @@ main ul > *{
 main ul :first-child{
     border-top: none;
 }
-main ul :last-child{
-    border-bottom: 1px solid gray;
-}
+
 .bar-text{
     text-decoration: line-through;
+}
+main button{
+    border: none;
+    background-color:lightblue ;
 }

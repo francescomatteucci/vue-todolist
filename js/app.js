@@ -7,6 +7,7 @@ createApp({
                 {
                     text: 'Fai la doccia',
                     done: true
+                    
                 },
                 {
                     text: 'Fai la spesa',
@@ -15,7 +16,8 @@ createApp({
                 {
                     text: 'Mangia il cane',
                     done: false
-                }
+                },
+               
             ]
         }
     },
@@ -25,6 +27,12 @@ createApp({
             if (todo.done === true) {
                 return 'bar-text'
             }
-        }
+        },
+
+        remove(index){
+            this.todos.splice(index, 1);
+        },
+        
+       
     }
-}).mount('#app');
+}).mount('#app')

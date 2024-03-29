@@ -1,27 +1,30 @@
 const { createApp } = Vue
 
-  createApp({
+createApp({
     data() {
-      return {
-        todos: [
-            {
-                text: 'Fai la doccia',
-                done: false
-            },
+        return {
+            todos: [
+                {
+                    text: 'Fai la doccia',
+                    done: true
+                },
+                {
+                    text: 'Fai la spesa',
+                    done: false
+                },
+                {
+                    text: 'Mangia il cane',
+                    done: false
+                }
+            ]
+        }
+    },
 
-            {
-                text: 'Fai la spesa',
-                done: false
-            },
-
-            {
-                text: 'Mangia il cane',
-                done: false
-            },
-            
-
-            
-        ]
-      }
+    methods: {
+        done(todo) {
+            if (todo.done === true) {
+                return 'bar-text'
+            }
+        }
     }
-  }).mount('#app')
+}).mount('#app');

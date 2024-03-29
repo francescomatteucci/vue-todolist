@@ -21,13 +21,13 @@
             <main>
                 <div class="container">
                     <ul>
-                        <li v-for="todo in todos">
+                        <li v-for="todo in todos" :key="todo.text" :class="done(todo)">
                             {{ todo.text }}
                             {{ todo.done }}
-
                         </li>
                     </ul>
                 </div>
+                
             </main>
         </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>

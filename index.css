@@ -35,3 +35,6 @@ main ul :first-child{
 main ul :last-child{
     border-bottom: 1px solid gray;
 }
+.bar-text{
+    text-decoration: line-through;
+}

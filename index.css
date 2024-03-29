@@ -21,12 +21,12 @@ main .container{
     border-top: none;
     border-bottom: none;
     background-color: lightblue;
-
+    padding:0px;
 }
 
 main ul > *{
     border-top: 1px solid gray;
-    margin: 0 -12px;
+   
 }
 
 main ul :first-child{
@@ -40,3 +40,8 @@ main button{
     border: none;
     background-color:lightblue ;
 }
+ input{
+    width:100%;
+
+}
+

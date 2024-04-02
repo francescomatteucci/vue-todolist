@@ -18,7 +18,8 @@ createApp({
                     done: false
                 },
                
-            ]
+            ],
+            newTodo: null
         }
     },
 
@@ -33,6 +34,12 @@ createApp({
             this.todos.splice(index, 1);
         },
         
-       
+        add() {
+            if (this.newTodo !== null && this.newTodo.trim() !== '') { 
+                this.todos.push({ text: this.newTodo, done: false }); 
+                this.newTodo = ''; 
+            }
+        }
+        
     }
 }).mount('#app')
